@@ -135,7 +135,7 @@ export const WithBackgroundColor = () => (
 );
 
 export const WithBackgroundGradientColor = () => (
-  <CmtCard backgroundColor={array('Background Color', ['#03DAC5 -18.96%', '#6200EE 108.17%'])}>
+  <CmtCard backgroundColor={array('Background Color', ['#03DAC5 -18.96%', '#FF9E00 108.17%'])}>
     <CmtCardHeader
       actionsShowOnHover={boolean('Actions Show on Hover', true)}
       actionsPos={select('Actions Position', ['default', 'top-corner'], 'default')}
@@ -159,7 +159,7 @@ export const WithBackgroundGradientColor = () => (
 
 export const WithOverlay = () => (
   <CmtCard
-    backgroundColor={array('Background Color', ['#03DAC5 -18.96%', '#6200EE 108.17%'])}
+    backgroundColor={array('Background Color', ['#03DAC5 -18.96%', '#FF9E00 108.17%'])}
     overlay={{
       colors: '#000',
       opacity: 0.3,
@@ -187,9 +187,9 @@ export const WithOverlay = () => (
 
 export const WithGradientOverlay = () => (
   <CmtCard
-    backgroundColor={array('Background Color', ['#03DAC5 -18.96%', '#6200EE 108.17%'])}
+    backgroundColor={array('Background Color', ['#03DAC5 -18.96%', '#FF9E00 108.17%'])}
     overlay={{
-      colors: ['#6200EE 108.17%', '#03DAC5 -18.96%'],
+      colors: ['#FF9E00 108.17%', '#03DAC5 -18.96%'],
       opacity: 0.3,
     }}>
     <CmtCardHeader
@@ -216,7 +216,7 @@ export const WithGradientOverlay = () => (
 export const OnlyGradientOverlay = () => (
   <CmtCard
     overlay={{
-      colors: ['#6200EE 108.17%', '#03DAC5 -18.96%'],
+      colors: ['#FF9E00 108.17%', '#03DAC5 -18.96%'],
       opacity: 0.3,
     }}>
     <CmtCardHeader
@@ -337,7 +337,7 @@ export const headerWithBackground = () => (
 export const headerWithGradientBackground = () => (
   <CmtCard>
     <CmtCardHeader
-      backgroundColor={object('Gradient Background', ['#03DAC5 -18.96%', '#6200EE 108.17%'])}
+      backgroundColor={object('Gradient Background', ['#03DAC5 -18.96%', '#FF9E00 108.17%'])}
       title={text('Title', 'Complex Interaction')}
       titleProps={object('Title Props', {
         component: 'h3',
@@ -495,7 +495,7 @@ export const FooterViewWithBackground = () => (
 export const FooterViewWithGradientBackground = () => (
   <CmtCard>
     <CmtCardFooter
-      backgroundColor={object('Gradient Background', ['#03DAC5 -18.96%', '#6200EE 108.17%'])}
+      backgroundColor={object('Gradient Background', ['#03DAC5 -18.96%', '#FF9E00 108.17%'])}
       gradientDirection={text('Gradient Direction', 'to right top')}>
       <Box width={1} display="flex" color="white" px={2}>
         <Box component="span">

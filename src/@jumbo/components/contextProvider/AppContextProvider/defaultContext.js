@@ -19,11 +19,11 @@ export default {
   },
   layout: LAYOUT_TYPES.VERTICAL_MODERN_SIDEBAR,
   layoutType: LAYOUT_STYLES.FULL_WIDTH,
-  themeType: THEME_TYPES.LIGHT,
+  themeType: THEME_TYPES.DARK,
   drawerBreakPoint: DRAWER_BREAK_POINT.MD,
   headerType: HEADER_TYPE.FIXED,
   sidebarType: SIDEBAR_TYPE.FULL,
   isSidebarFixed: true,
   sidebarWidth: SIDEBAR_WIDTH.DEFAULT,
-  showFooter: false,
+  showFooter: true,
 };

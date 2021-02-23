@@ -41,14 +41,14 @@ const useStyles = makeStyles(theme => ({
     marginRight: '-1px',
   },
   button: props => ({
-    backgroundColor: props.linkCopy ? '#8DCD03' : '#6200EE',
+    backgroundColor: props.linkCopy ? '#8DCD03' : '#FF9E00',
     color: '#fff',
     borderTopLeftRadius: 0,
     borderBottomLeftRadius: 0,
     height: '100%',
 
     '&:hover': {
-      backgroundColor: props.linkCopy ? '#8DCD03' : '#6200EE',
+      backgroundColor: props.linkCopy ? '#8DCD03' : '#FF9E00',
     },
   }),
   successMsg: {

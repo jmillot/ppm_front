@@ -21,7 +21,7 @@ const AppContextProvider = ({ children }) => {
     backgroundImage: '',
     textColor: 'rgba(0, 0, 0, 0.6)',
     textDarkColor: 'rgba(0, 0, 0, 0.87)',
-    textActiveColor: '#6200EE',
+    textActiveColor: '#FF9E00',
     navHoverBgColor: 'rgb(229, 229, 229)',
     navActiveBgColor: 'rgb(239, 229, 253)',
   });
@@ -116,7 +116,7 @@ const AppContextProvider = ({ children }) => {
         textDarkColor: '#fff',
         textActiveColor: '#fff',
         navHoverBgColor: 'rgba(187, 134, 252, 0.3)',
-        navActiveBgColor: '#6200EE',
+        navActiveBgColor: '#FF9E00',
         borderColor: 'rgba(255, 255, 255, 0.2)',
       };
     }

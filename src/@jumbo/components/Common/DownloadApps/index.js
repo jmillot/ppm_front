@@ -41,7 +41,7 @@ const DownloadApps = () => {
   return (
     <CmtAdvCard
       className={classes.cardRoot}
-      backgroundColor={['#03DAC5 -18.96%', '#6200EE 108.17%']}
+      backgroundColor={['#03DAC5 -18.96%', '#FF9E00 108.17%']}
       gradientDirection="180deg">
       <CmtAdvCardContent
         title="Download Mobile Apps"

@@ -3,6 +3,7 @@ import { Redirect, Route, Switch } from 'react-router';
 import { useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import SamplePage from './Pages/SamplePage';
+import ProjectPage from './Pages/ProjectPage';
 import Error404 from './Pages/404';
 import Login from './Auth/Login';
 import Register from './Auth/Register';
@@ -43,6 +44,7 @@ const Routes = () => {
     <React.Fragment>
       <Switch>
         <Route path="/sample-page" component={SamplePage} />
+        <Route path="/project" component={ProjectPage} />
         <Route path="/signin" component={Login} />
         <Route path="/signup" component={Register} />
         <Route path="/forgot-password" component={ForgotPasswordPage} />

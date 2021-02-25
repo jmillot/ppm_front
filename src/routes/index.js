@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import SamplePage from './Pages/SamplePage';
 import ProjectPage from './Pages/ProjectPage';
+import Dashboard from './Pages/Dashboard';
 import Error404 from './Pages/404';
 import Login from './Auth/Login';
 import Register from './Auth/Register';
@@ -36,15 +37,20 @@ const Routes = () => {
 
   if (location.pathname === '' || location.pathname === '/') {
     return <Redirect to={'/sample-page'} />;
-  } else if (authUser && location.pathname === '/signin') {
-    return <Redirect to={'/sample-page'} />;
+  } else if (
+    authUser &&
+    (location.pathname === '/signin' || location.pathname === '/signup' || location.pathname === '/forgot-password')
+  ) {
+    return <Redirect to={'/dashboard'} />;
   }
 
   return (
     <React.Fragment>
       <Switch>
-        <Route path="/sample-page" component={SamplePage} />
-        <Route path="/project" component={ProjectPage} />
+        <RestrictedRoute path="/dashboard" component={Dashboard} />
+        <RestrictedRoute path="/sample-page" component={SamplePage} />
+        <RestrictedRoute path="/project" component={ProjectPage} />
+
         <Route path="/signin" component={Login} />
         <Route path="/signup" component={Register} />
         <Route path="/forgot-password" component={ForgotPasswordPage} />

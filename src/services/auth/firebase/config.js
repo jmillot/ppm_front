@@ -2,12 +2,13 @@ import firebase from 'firebase';
 
 // Initialize Firebase
 const config = {
-  apiKey: 'AIzaSyCYaTKjfam_qMXDnGfcdnBxScEq89VQtLk',
-  authDomain: 'curious-sandbox-196209.firebaseapp.com',
+  apiKey: 'AIzaSyDdF9RF79fPDjP2zuBsAJGpBW_LgSIYax0',
+  authDomain: 'mtp-ppm.firebaseapp.com',
+  projectId: 'mtp-ppm',
+  storageBucket: 'mtp-ppm.appspot.com',
+  messagingSenderId: '289692904736',
+  appId: '1:289692904736:web:9f5445865a59f5c3fa3b45',
   databaseURL: 'https://curious-sandbox-196209.firebaseio.com',
-  projectId: 'curious-sandbox-196209',
-  storageBucket: '',
-  messagingSenderId: '1034032747860',
 };
 
 firebase.initializeApp(config);

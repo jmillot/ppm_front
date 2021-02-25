@@ -645,6 +645,8 @@
   "appModule.signin": "Sign In",
   "appModule.signup": "Sign Up",
   "pages.samplePage": "Sample Page",
+  "pages.projectPage": "Projects",
+  "pages.dashboard": "Dashboards",
   "pages.samplePage.description": "Start building your app. Happy Coding!",
   "mailNotification.title": "Messages",
   "appNotification.title": " Notifications",

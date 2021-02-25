@@ -3,7 +3,8 @@ import CmtVertical from '../../../../../@coremat/CmtNavigation/Vertical';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import makeStyles from '@material-ui/core/styles/makeStyles';
 import IntlMessages from '../../../../utils/IntlMessages';
-import { PostAdd } from '@material-ui/icons';
+import { PostAdd, Today } from '@material-ui/icons';
+import DashboardIcon from '@material-ui/icons/Dashboard';
 
 const useStyles = makeStyles(theme => ({
   perfectScrollbarSidebar: {
@@ -32,10 +33,22 @@ const SideBar = () => {
       type: 'section',
       children: [
         {
+          name: <IntlMessages id={'pages.dashboard'} />,
+          icon: <DashboardIcon />,
+          type: 'item',
+          link: '/dashboard',
+        },
+        {
           name: <IntlMessages id={'pages.samplePage'} />,
           icon: <PostAdd />,
           type: 'item',
           link: '/sample-page',
+        },
+        {
+          name: <IntlMessages id={'pages.projectPage'} />,
+          icon: <Today />,
+          type: 'item',
+          link: '/project',
         },
       ],
     },
